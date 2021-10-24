@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    </style>
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <title>Reto3</title>
+</head>
+
+<body bgcolor="gray">
+    <h4><img src="//w7.pngwing.com/pngs/894/967/png-transparent-arrow-left-arrow-hd-angle-web-design-text.png"
+            width="41"> &nbsp; <a href="index.html">REGRESAR</a></h4>
+    <!--CABAÑA-->
+
+    <h1> Cabana!!!</h1>
+    <fieldset style="width: 80%">
+        <legend><b>Registrar los datos de las cabanas</b><br></legend>
+
+        <!--Se crea el botón para traer información de la tabla cabana-->
+        <button onclick="TraerCabana()"> <b>Consultar cabanas</b><br></button>
+        <tr>
+            <br>
+            <br>
+        <tr>
+            <th><b>Brand</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" id="brand" placeholder="brand"></td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Rooms</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="number" id="rooms" placeholder="rooms"> </td>
+        </tr>
+        <br>
+        </tr>
+        <tr>
+            <th><b>Category</b></th>&nbsp;&nbsp;&nbsp;
+            <td><input type="number" id="category" placeholder="category"> </td>
+
+        </tr> </select>
+        <br>
+        <th><b>Name</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td><input type="text" id="name" placeholder="name"> </td>
+        </tr>
+        <br>
+        <th><b>Description</b></th>
+        <td><textarea id="description" placeholder="description" rows="2" cols="30"></textarea> </td>
+        </tr>
+        <br>
+        <br>
+
+        <br>
+        <button onclick="guardarCabana()"><b>Agregar cabana!</b><br></button>
+        <button onclick="mostrarUnaCabanaEspecifica()"><b>Mostrar una cabana!</b><br></button>
+
+    </fieldset>
+    <div id="resultadoCabana"></div>
+
+
+
+</body>
+
+</html>
